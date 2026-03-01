@@ -1,0 +1,34 @@
+# multiple light sources
+camera_pos: 0 12 0.1
+camera_fwd: 0 1 0.01
+camera_up:  0 1 0
+camera_fov_ha: 30
+output_image: multilight.png
+film_resolution: 800 800
+samples_per_pixel: 16
+
+background: 0.0 0.0 0.0
+ambient_light: 0.15 0.15 0.15
+max_depth: 2
+
+# Pink point light
+point_light: 25 0 17 -5 5 0
+
+# Cyan directional light
+directional_light: 0 8 10 1 0 -0.5
+
+# ground
+material: 0.1 0.1 0.1 0.1 0.1 0.1 0 0 0 1 0 0 0 1.0
+sphere: 0 -100 0 100
+
+# Metallic Sphere 1 (Blue)
+material: 0.1 0.1 0.8 0.1 0.1 0.8 1 1 1 64 0 0 0 1.0
+sphere: 0 1 0 1
+
+# Metallic Sphere 2 (Silver)
+material: 0.8 0.8 0.8 0.6 0.6 0.6 1 1 1 64 0 0 0 1.0
+sphere: -2.5 1 2.5 1
+
+# Metallic Sphere 3 (Gold)
+material: 0.8 0.8 0.1 0.8 0.8 0.1 1 1 1 64 0 0 0 1.0
+sphere: 2.5 1 -2.5 1

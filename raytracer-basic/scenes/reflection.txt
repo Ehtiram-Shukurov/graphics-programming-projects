@@ -1,0 +1,42 @@
+# Reflection
+camera_pos: 0 1.5 8
+camera_fwd: 0 0.0 1
+camera_up:  0 1 0
+camera_fov_ha: 35
+output_image: reflection.png
+film_resolution: 1024 1024
+samples_per_pixel: 16
+max_depth: 8
+
+# Dark background
+background: 0.05 0.05 0.1
+ambient_light: 0.05 0.05 0.05
+
+# Main light from above
+point_light: 15 15 15 0 8 4
+# Blue light from the side/back
+directional_light: 0.5 0.5 1.0 1 0.5 1
+
+# Ground Plane
+material: 0.1 0.1 0.1 0.1 0.1 0.1 0.9 0.9 0.9 128 0 0 0 1.0
+sphere: 0 -100 0 100
+
+# Left sphere
+material: 0.1 0.1 0.1 0.1 0.1 0.1 0.9 0.9 0.9 128 0 0 0 1.0
+sphere: -6 2 0 3
+
+# Right sphere
+material: 0.1 0.1 0.1 0.1 0.1 0.1 0.9 0.9 0.9 128 0 0 0 1.0
+sphere: 6 2 0 3
+
+# Red Sphere (Glossy)
+material: 1 0 0 1 0 0 0.8 0.8 0.8 64 0 0 0 1.0
+sphere: 0 2 0 1
+
+# Green Sphere (Glossy)
+material: 0 1 0 0 1 0 0.8 0.8 0.8 64 0 0 0 1.0
+sphere: 0.5 1.5 0.8 0.5
+
+# Blue Sphere (Glossy)
+material: 0 0 1 0 0 1 0.8 0.8 0.8 64 0 0 0 1.0
+sphere: -0.5 2.5 0.8 0.5

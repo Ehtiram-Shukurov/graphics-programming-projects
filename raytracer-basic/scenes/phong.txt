@@ -1,0 +1,31 @@
+# Phong Lighting
+camera_pos: 0 3 8
+camera_fwd: 0 0.2 1
+camera_up:  0 1 0
+camera_fov_ha: 30
+output_image: phong.png
+film_resolution: 800 600
+
+
+samples_per_pixel: 16
+background: 0.12 0.14 0.18
+ambient_light: 0.1 0.1 0.1
+max_depth: 2
+
+point_light: 20 20 20 -8 5 0
+
+# Ground
+material: 0.8 0.8 0.8 0.8 0.8 0.8 0 0 0 1 0 0 0 1.0
+sphere: 0 -100 0 100
+
+# Matte Red Sphere
+material: 1 0 0 1 0 0 0 0 0 1 0 0 0 1.0
+sphere: -2.5 1 0 1
+
+# Shiny Blue Sphere
+material: 0 0 1 0 0 1 1 1 1 64 0 0 0 1.0
+sphere: 0 1 -2 1
+
+# Slightly Shiny Green Sphere
+material: 0 1 0 0 1 0 0.3 0.3 0.3 16 0 0 0 1.0
+sphere: 2 1 -0.5 1

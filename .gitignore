@@ -399,3 +399,24 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# -------------------------
+# Extra ignores (C++ / VSCode / misc)
+# -------------------------
+
+# VS Code
+.vscode/
+
+# GCC / MinGW / clang build outputs
+*.o
+*.a
+*.out
+*.dSYM/
+*.dll
+*.so
+*.dylib
+
+# CMake / build folders (if you ever add them later)
+build/
+cmake-build-*/
+out/

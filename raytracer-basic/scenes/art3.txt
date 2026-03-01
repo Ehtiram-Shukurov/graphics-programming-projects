@@ -1,0 +1,52 @@
+# Art 3
+camera_pos: 0 8 10
+camera_fwd: 0 0.5 1
+camera_up:  0 1 0
+camera_fov_ha: 35
+output_image: art3.png
+film_resolution: 1024 1024
+samples_per_pixel: 16
+max_depth: 6
+
+# Darker blue sky
+background: 0.3 0.4 0.6
+ambient_light: 0.3 0.3 0.3
+
+# Main light from above
+point_light: 15 15 15 0 10 0
+# Side light for highlights
+directional_light: 1 1 1 -1 -0.5 -1
+
+# ground
+material: 0.1 0.1 0.1 0.1 0.1 0.1 0.8 0.8 0.8 64 0 0 0 1.0
+sphere: 0 -100 0 100
+
+# Central "Chrome" Sphere
+material: 0.1 0.1 0.1 0.1 0.1 0.1 0.9 0.9 0.9 128 0 0 0 1.0
+sphere: 0 3 0 2
+
+#Inner (Red)
+material: 1 0 0 1 0 0 0.3 0.3 0.3 32 0 0 0 1.0
+sphere: 3 2.5 0 0.5
+sphere: -3 2.5 0 0.5
+sphere: 0 2.5 3 0.5
+sphere: 0 2.5 -3 0.5
+
+# Middle (Blue)
+material: 0 0 1 0 0 1 0.3 0.3 0.3 32 0 0 0 1.0
+sphere: 5 3.5 0 0.5
+sphere: -5 3.5 0 0.5
+sphere: 0 3.5 5 0.5
+sphere: 0 3.5 -5 0.5
+
+# Outer (Green)
+material: 0 1 0 0 1 0 0.3 0.3 0.3 32 0 0 0 1.0
+sphere: 7 3.0 0 0.5
+sphere: -7 3.0 0 0.5
+sphere: 0 3.0 7 0.5
+sphere: 0 3.0 -7 0.5
+
+# (Purple)
+material: 0.5 0 1 0.5 0 1 0.3 0.3 0.3 32 0 0 0 1.0
+sphere: 0 4.5 1 0.3
+sphere: 0 1.5 -1 0.3
