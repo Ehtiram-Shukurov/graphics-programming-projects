@@ -12,17 +12,11 @@ This project demonstrates an interactive square built with OpenGL, supporting re
 
 ## Demo
 
-### Scaling
-
-![Scaling](media/scaling.gif)
-
-### Animation
-
-![Animation](media/animation.gif)
-
-### Texture Switching
-
-![Texture](media/texture.gif)
+<div align="center">
+  <img src="media/scaling.gif" width="300">
+  <img src="media/animation.gif" width="300">
+  <img src="media/texture.gif" width="300">
+</div>
 
 ## Controls
 
