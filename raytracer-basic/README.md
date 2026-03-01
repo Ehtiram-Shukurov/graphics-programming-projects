@@ -27,6 +27,7 @@ This version focuses on the core ray tracing pipeline and serves as the foundati
   <img src="images/multilight.png" width="300">
   <img src="images/reflection.png" width="300">
   <img src="images/snowman.png" width="300">
+  <img src="images/bear.png" width="300">
 </div>
 
 ## How It Works
