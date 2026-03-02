@@ -44,14 +44,18 @@ Compared to the basic ray tracer, this version adds:
 Add your best renders to the `images/` folder and reference them here.
 
 ### Sample Render
-<img src="images/plant.png" width="500">
 
-### Additional Scene
-<img src="images/cornell_box.png" width="500">
+<div align="center">
+<img src="images/plant.png" width="500">
+<img src="images/cornell_box.png" width="500">  
+</div
 
 ### Complex Scene
+
+<div align="center">
 <img src="images/snowman_3b.png" width="500">
 <img src="images/triangles.png" width="500">
+</div
 
 ## How It Works
 
