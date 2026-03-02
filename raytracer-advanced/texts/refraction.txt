@@ -1,0 +1,46 @@
+#Refraction
+
+#camera and scene
+film_resolution: 800 600
+output_image: refraction.png
+camera_pos: 0 2 12
+camera_fwd: 0 0 1
+camera_up: 0 1 0
+camera_fov_ha: 25
+samples_per_pixel: 16
+background: 0.6 0.8 1.0
+ambient_light: 0.3 0.3 0.3
+max_depth: 6
+
+directional_light: 1 1 0.9 -1 -1 -1
+
+max_vertices: 7
+max_normals: 0
+
+vertex: -1 0 -2
+vertex: 1 0 -2
+vertex: 2 0 0
+vertex: 1 0 2
+vertex: -1 0 2
+vertex: -2 0 0
+vertex: 0 7 0
+
+material: 0.1 0.2 0.1 0.7 0.9 0.7 0.1 0.1 0.1 20 0.1 0.1 0.1 1.0
+plane: 0 0 0 0 1 0
+
+material: 0.0 0.05 0.2 0.0 0.0 0.0 0.2 0.2 0.2 100 0.8 0.8 0.8 1.33
+box: -4 0 -4 4 0.2 4
+
+material: 0.2 0.0 0.0 0.0 0.0 0.0 0.2 0.2 0.2 100 0.9 0.1 0.1 2.4
+triangle: 0 1 6
+triangle: 1 2 6
+triangle: 2 3 6
+triangle: 3 4 6
+triangle: 4 5 6
+triangle: 5 0 6
+
+
+material: 0 0 0 0 0 0 0.1 0.1 0.1 100 0.9 0.9 0.9 1.5
+sphere: 3.5 1.5 -1 1.5
+sphere: -3 1 1 1
+sphere: 0 0.8 2.5 0.8

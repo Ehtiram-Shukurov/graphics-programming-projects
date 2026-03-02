@@ -1,0 +1,207 @@
+#Snowman V2
+film_resolution: 800 600
+output_image: snowman_3b.png
+camera_pos: 0.2 2.95 5.2
+camera_fwd: 0.05 0.2 1
+camera_up: 0 2 0
+camera_fov_ha: 25
+background: 0.45 0.65 0.85
+ambient_light: 0.1 0.1 0.1
+max_depth: 5
+
+
+# lights
+directional_light: 1 0.95 0.85   0.5 -0.5 -1
+point_light: 0.4 0.6 1.0   -3 6 -2
+directional_light: 0.4 0.5 0.6   0 -1.5 -0.2
+
+max_vertices: 50
+max_normals: 0
+
+#Vertices for nose
+vertex: 0 2.18 0.36
+vertex: -0.09 2.27 0.36
+vertex: 0.09 2.27 0.36
+vertex: -0.09 2.09 0.36
+vertex: 0.09 2.09 0.36
+vertex: 0 2.18 1.2
+
+#Vertices for house
+vertex: 3 0 -10     
+vertex: 8 5 -5     
+vertex: 3 5 -10     
+vertex: 8 5 -10  
+vertex: 3 5 -5      
+vertex: 8 5 -5    
+vertex: 5.5 8 -7.5
+
+
+#ground
+material: 0.95 0.97 1.00   0.95 0.97 1.00   0 0 0   1   0 0 0 1
+plane: 0 0 0 0 1 0
+
+#snowman
+material: 0.9 0.9 0.95  0.9 0.9 0.95  0.12 0.12 0.12  5 0 0 0 16
+sphere: 0 0.32 0 0.72
+sphere: 0 1.22 0 0.6
+sphere: 0 2.12 0 0.48
+
+#eyes and buttons
+material: 0 0 0 0.1 0.1 0.1 0.8 0.8 0.8 100 0 0 0 1
+sphere: 0.18 2.24 0.42 0.06    
+sphere: -0.18 2.24 0.42 0.06   
+sphere: 0 1.7 0.6 0.06        
+sphere: 0 1.4 0.6 0.06        
+sphere: 0 1.1 0.6 0.06  
+
+#nose
+material: 0.1 0.05 0 0.8 0.4 0 0.1 0.1 0.1 10 0 0 0 1
+triangle: 1 2 5
+triangle: 2 4 5
+triangle: 4 3 5
+triangle: 3 1 5
+
+#house
+#main
+material: 0.1 0.08 0.05   0.6 0.45 0.3   0.1 0.1 0.1   15   0 0 0 1
+box: 3 0 -10 8 5 -5
+
+#roof
+material: 0.05 0.05 0.06   0.2 0.2 0.25   0.05 0.05 0.05   10   0 0 0 1
+triangle: 8 9 12
+triangle: 10 11 12
+
+#chimney
+material: 0.1 0.03 0.02   0.7 0.2 0.1   0.1 0.1 0.1   8   0 0 0 1
+box: 3.5 5 -9.5 4.5 7 -9
+
+#door
+material: 0.08 0.02 0.02   0.6 0.1 0.1   0.2 0.2 0.2   32   0 0 0 1
+box: 5 0 -4.99 6.5 3 -4.9
+
+#windows
+material: 0.0 0.0 0.0   0.0 0.0 0.0   0.8 0.8 0.8   200   0.5 0.7 0.8   1.1
+box: 3.5 2 -4.99 4.5 3 -4.9
+box: 7 2 -4.99 7.8 3 -4.9
+
+
+#mountains
+material: 0.95 0.97 1.00   0.95 0.97 1.00   0.1 0.1 0.1   5   0 0 0 1
+sphere: -25 -10 -60 20
+sphere: 10 -15 -55 25
+sphere: 40 -10 -70 30
+
+#TREE
+
+#trunk
+material: 0.06 0.04 0.02   0.45 0.30 0.15   0.04 0.03 0.02   8   0 0 0 1
+box: -3.7 0 -1.5   -3.3 0.7 -0.9
+
+# Pine green
+material: 0.02 0.05 0.03   0.12 0.60 0.28   0.08 0.10 0.10   20   0 0 0 1
+
+#Lower ring
+vertex: -1.7 0.8 -1.2
+vertex: -2.22 0.8 0.08
+vertex: -3.5 0.8 0.6
+vertex: -4.78 0.8 0.08
+vertex: -5.3 0.8 -1.2
+vertex: -4.78 0.8 -2.48
+vertex: -3.5 0.8 -3.0
+vertex: -2.22 0.8 -2.48
+#lower tip
+vertex: -3.5 2.7 -1.2
+
+#middle
+vertex: -2.2 2.2 -1.2
+vertex: -2.58 2.2 0.12
+vertex: -3.5 2.2 0.1
+vertex: -4.42 2.2 0.12
+vertex: -4.8 2.2 -1.2
+vertex: -4.42 2.2 -2.52
+vertex: -3.5 2.2 -2.5
+vertex: -2.58 2.2 -2.52
+#middle tip
+vertex: -3.5 4.5 -1.2
+
+#upper ring
+vertex: -2.6 3.6 -1.2
+vertex: -2.86 3.6 -0.56
+vertex: -3.5 3.6 -0.3
+vertex: -4.14 3.6 -0.56
+vertex: -4.4 3.6 -1.2
+vertex: -4.14 3.6 -1.84
+vertex: -3.5 3.6 -2.1
+vertex: -2.86 3.6 -1.84
+#upper tip
+vertex: -3.5 6.1 -1.2
+
+#triangles
+#lower
+triangle: 21 13 14
+triangle: 21 14 15
+triangle: 21 15 16
+triangle: 21 16 17
+triangle: 21 17 18
+triangle: 21 18 19
+triangle: 21 19 20
+triangle: 21 20 13
+
+#middle
+triangle: 30 22 23
+triangle: 30 23 24
+triangle: 30 24 25
+triangle: 30 25 26
+triangle: 30 26 27
+triangle: 30 27 28
+triangle: 30 28 29
+triangle: 30 29 22
+
+#upper
+triangle: 39 31 32
+triangle: 39 32 33
+triangle: 39 33 34
+triangle: 39 34 35
+triangle: 39 35 36
+triangle: 39 36 37
+triangle: 39 37 38
+triangle: 39 38 31
+
+#star
+material: 0.10 0.08 0.02   0.85 0.70 0.20   0.85 0.75 0.35   64   0 0 0 1
+# vertices 40..43
+vertex: -3.5 6.5 -1.2
+vertex: -3.36 6.3 -1.2
+vertex: -3.64 6.3 -1.2
+vertex: -3.5 6.36 -1.0
+triangle: 40 41 42
+triangle: 40 41 43
+triangle: 40 42 43
+triangle: 41 42 43
+
+#ornaments
+# red
+material: 0.08 0.02 0.02   0.90 0.20 0.20   0.45 0.25 0.25   64   0 0 0 1
+sphere: -4.1 1.9 -2.5 0.18
+sphere: -2.8 3.1 -0.9 0.16
+# blue
+material: 0.01 0.03 0.08   0.25 0.55 0.95   0.45 0.50 0.60   64   0 0 0 1
+sphere: -2.2 1.2 -1.2 0.2
+sphere: -4.2 4.2 -1.2 0.14
+# gold
+material: 0.06 0.05 0.02   0.85 0.70 0.20   0.70 0.60 0.30   48   0 0 0 1
+sphere: -3.5 2.2 -1.9 0.16
+sphere: -4.7 3.6 -1.2 0.14
+
+material: 0.08 0.02 0.02   0.90 0.20 0.20   0.45 0.25 0.25   64   0 0 0 1
+sphere: -2.9 1.0 0.0 0.15
+
+material: 0.01 0.03 0.08   0.25 0.55 0.95   0.45 0.50 0.60   64   0 0 0 1
+sphere: -3.0 4.0 -0.5 0.16
+
+material: 0.06 0.05 0.02   0.85 0.70 0.20   0.70 0.60 0.30   48   0 0 0 1
+sphere: -2.5 2.5 0.1 0.17
+
+#gift
+material: 0.1 0.0 0.0   0.8 0.1 0.1   0.9 0.9 0.9   100   0 0 0 1
+box: -3.3 0 -1.0 -2.8 0.5 -0.5
