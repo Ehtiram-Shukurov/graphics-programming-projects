@@ -86,17 +86,16 @@ This makes the game system flexible and easy to extend without hardcoding geomet
 
 ## Example Media
 
-### Gameplay
+### Level View
+<img src="media/level.png" width="500">
 
-<div align="center">
+### Gameplay
 <img src="media/gameplay.gif" width="500">
 
+### Mechanics
 <img src="media/mechanics.gif" width="500">
-</div
-<br>
-<br>
-### Level View
-<img src="media/level.gif" width="500">
+
+
 
 ## Controls
 
@@ -120,6 +119,24 @@ g++ -std=c++11 main.cpp glad/glad.c -I"C:/libs/SDL3/include" -L"C:/libs/SDL3/lib
 .\platform_ink.exe
 ```
 
+## Project Structure
+
+```text
+platform-ink-npr-platformer/
+├── main.cpp
+├── glad/
+├── glm/
+├── assets/
+│   ├── models/
+│   ├── levels/
+│   ├── textures/
+│   └── shaders/
+├── stb_image.h
+├── images/
+└── README.md
+```
+
+If your current project still uses a `models/` folder directly instead of `assets/`, that is also fine—just keep the relative paths consistent.
 
 ## Main Technical Challenges
 
