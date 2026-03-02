@@ -119,25 +119,6 @@ g++ -std=c++11 main.cpp glad/glad.c -I"C:/libs/SDL3/include" -L"C:/libs/SDL3/lib
 .\platform_ink.exe
 ```
 
-## Project Structure
-
-```text
-platform-ink-npr-platformer/
-├── main.cpp
-├── glad/
-├── glm/
-├── assets/
-│   ├── models/
-│   ├── levels/
-│   ├── textures/
-│   └── shaders/
-├── stb_image.h
-├── images/
-└── README.md
-```
-
-If your current project still uses a `models/` folder directly instead of `assets/`, that is also fine—just keep the relative paths consistent.
-
 ## Main Technical Challenges
 
 Some of the biggest challenges in this project were:
@@ -176,19 +157,6 @@ It also expands the earlier Project 4 framework into a more complete interactive
 - **stb_image**
 - **Ultimate Platformer Pack by Quaternius** for art assets
 - Custom OBJ / MTL parsing logic for loading geometry and diffuse color data
-
-## Future Improvements
-
-There are several clear next steps for improving this project:
-
-- More robust collision handling
-- Camera obstacle avoidance
-- Better shadow support
-- More advanced toon ramp variations
-- Sound effects
-- Particle effects
-- HUD / on-screen UI
-- Better separation between engine systems and gameplay code
 
 ## Notes
 
