@@ -41,16 +41,11 @@ Compared to the basic ray tracer, this version adds:
 
 ## Example Output
 
-Add your best renders to the `images/` folder and reference them here.
-
-### Sample Render
-
 <div align="center">
 <img src="images/plant.png" width="500">
 <img src="images/cornell_box.png" width="500">  
 </div
-
-### Complex Scene
+<br>
 
 <div align="center">
 <img src="images/snowman_3b.png" width="500">
