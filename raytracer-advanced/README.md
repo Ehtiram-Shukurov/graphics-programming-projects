@@ -46,6 +46,7 @@ Compared to the basic ray tracer, this version adds:
 <img src="images/cornell_box.png" width="500">  
 </div
 <br>
+<br>
 
 <div align="center">
 <img src="images/snowman_3b.png" width="500">
