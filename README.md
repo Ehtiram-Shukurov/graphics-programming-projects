@@ -62,23 +62,6 @@ A small interactive 3D OpenGL project with level logic, movement, collision, and
 📁 Folder: [3d-maze-engine-opengl](./3d-maze-engine-opengl/)
 
 ---
-
-### 5. Platform Ink: NPR Platformer
-My final project for the course: a third-person 3D platformer with non-photorealistic rendering and a complete playable game loop.
-
-**Highlights**
-- Toon / cel shading
-- Rim lighting
-- Inverted-hull outlines
-- Third-person camera
-- Data-driven level loading
-- Collectibles, hazards, and multi-level progression
-- Lightweight platforming collision system
-
-📁 Folder: [platform-ink-npr-platformer](./platform-ink-npr-platformer/)
-
----
-
 ## Skills Covered
 
 Across these projects, I worked with:
@@ -93,8 +76,6 @@ Across these projects, I worked with:
 - OBJ / MTL parsing
 - Texture mapping
 - Collision logic
-- Data-driven level systems
-- Non-photorealistic rendering (NPR)
 
 ## Notes
 
